@@ -1,0 +1,63 @@
+<html>
+    <head> <link rel="stylesheet" href="./Css/payment.css">
+   </head>
+<body>
+    <form action="/pay" method="POST" class="reg-form">
+    <p class="helper-text">* denotes a required field</p>
+    <div class="field-row">
+       <input type="radio" id="challan" name="option-id" value="Challan">
+       <label for="challan">Challan no.</label>
+       <input type="radio" id="driving" name="option-id" value="Driving">
+       <label for="challan">Driving License</label>
+       <input type="radio" id="vehicle" name="option-id" value="Vehicle no.">
+       <label for="challan">Vehicle no.</label><br><br>
+       <input type="text" id="ptext" name="option-id" class="Textbox" placeholder="Enter the above selected option">
+       <label for="challan">Enter</label>
+      </div><br>
+      
+
+
+    <div class="field-row" id="pay-in"></div>
+      <label class="form-label">Challan</label>
+      <select class="form-dropdown field" id="pay" onchange="fine();">
+         <option value="helmet">No-Helmet</option>
+         <option value="Traffic Rules">Break-Traffic Rules</option>      
+         <option value="Three-seater">Three-seater</option>
+      </select>
+    </div>
+    <div class="field-row">
+       <label class="form-label">Payment Mode</label>
+       <select class="form-dropdown field">
+          <option value="UPI"> UPI </option>
+          <option value="Net Banking"> Net Banking </option>
+          <option value="Debit Card"> Debit Card </option>
+          <option value="Credit Card">Credit Card</option>
+          <option value="Challan"> Challan </option>
+       </select><br>
+       <label>Amount</label>
+       <input type="text" id="amount" class="Amountbox">
+    </div><br>
+    <div class="field-row">
+        <a href="paysucess.html">
+        <button type="button" class="form-button">Submit</button>
+        </a>
+   </div>
+ </form>
+ <script>
+   var amt;
+   function fine(){
+      var category=document.getElementById('pay').value;
+      if(category=="helmet"){
+         amt=700;
+      }
+      else if(category=="Traffic Rules"){
+         amt=500;
+      }
+      else if(category=="Three-seater"){
+         amt=300;
+      }
+      document.getElementById('amount').value=amt;
+   }   
+ </script>
+ </body>
+ </html>

@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Admin_Login</title>
+        <style>
+            *{
+    margin:0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    /*background-image:url("./images/abc.jpg");*/
+    background-color:#040429;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.lock{
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+.container{
+    width:330px;
+    height:330px;
+    margin:10% auto;
+    background: #040427;
+    box-shadow: 10px 10px 12px 8px lightseagreen;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+h3{
+    text-align: centre;
+    margin-bottom: 40px;
+    color: white;
+}
+.container form{
+    width: 280px;
+    position:absolute;
+    top: 100px;
+    left: 40px;
+    transition: 0.5s;
+}
+form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border:0;
+    border-bottom: 1px solid white;
+    color:white;
+    outline: none;
+    background: transparent;
+}
+::placeholder{
+    color: white;
+    margin: 30px auto;
+    text-align: centre;
+}
+form button{
+    width:110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right white);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.step-row{
+    width: 360px;
+    height:40px;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px white;
+    position: relative;
+}
+.step-col{
+    width: 250;
+    text-align: center;
+    color: white;
+    position: relative;
+    }
+
+    :required + .message::before {
+    content: "* ";
+  }
+  .text-field:focus:required:valid {
+    outline: red 2px;
+  }
+
+    </style>
+ </head>
+    <body>
+        <div class="lock"><img src="./images/loc.png"></div>
+        <div class ="container">
+            <form action="/Admin" method="post" form id="adminLog">
+                <h3>ADMIN PERSONNEL</h3>
+                <input type="text" placeholder="POLICE ID" value="" class="field text-field policeid-field" required>
+                <span class="message"></span>
+                <input type="password" placeholder="PASSWORD" value="" class="field text-field policeid-field" required>
+                <div class="btn-box">
+                    <a href="driverform.html">
+                    <button type="button" id="Submit1">Login</button>
+                    </a>
+                    <a href="index.html">
+                    <button type="button" id="rback">Back</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+        </form>
+    </body>
+
+    </html>
+       

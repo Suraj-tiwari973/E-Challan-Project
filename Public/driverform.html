@@ -1,0 +1,69 @@
+<html>
+    <head> <link rel="stylesheet" href="./Css/drivercss.css"></head>
+<body>
+    <form action="/driverform" method="POST" form class="reg-form" id="challan">
+    <div class="field-row">
+      <h1>Add new Driver details:-</h1>
+       <label class="form-label" for="fullName">Full name</label>
+       <input type="text" id="fullName" name="fullname" value="" class="field text-field first-name-field" required>
+       <span class="message"></span>
+    </div>
+    <div class="field-row">
+       <label class="form-label cf" for="licenseNo">LicenseNo</label>
+       <input type="text" id="licenseNo" name="licenseNo" value="" class="field text-field last-name-field" required>
+       <span class="message"></span>
+    </div>
+    <div class="field-row">
+       <label class="form-label" for="initials">Police ID</label>
+       <input type="number" id="pid" name="Policeid" value="" class="field text-field initials-field">
+    </div>
+    <div class="field-row">
+       <label class="form-label" for="dateOfBirth">Date of Violation</label>
+       <input type="date" id="dov" name="Dateofviolation" value="" class="field date-field dob-field" min="1900-01-01" max="2022-09-18"  required>
+       <span class="message"></span>
+    </div>
+    <div class="field-row">
+       <label class="form-label" for="tel">Vehicle Number</label>
+       <input type="tel" id="vehicle" value="" name="VehicleNumber" class="field text-field tel-field" required>
+       <span class="message"></span>
+    </div>
+    <!--<div class="field-row">
+       <label class="form-label" for="tel">Name of Violator</label>
+       <input type="text" id="tel" class="field text-field address-field" required>
+       <span class="message"></span>
+    </div>!-->
+    <div class="field-row">
+       <label class="form-label">Vehicle Type</label>
+       <select class="form-dropdown field">
+          <option value="Car"> Car </option>
+          <option value="Truck"> Truck </option>
+          <option value="Two Wheelers"> Two Wheelers </option>
+          <option value="Lorry">Lorry</option>
+          <option value="Bus"> Bus </option>
+       </select>
+    </div>
+    <div class="field-row">
+       <label class="form-label" for="tel">Mobile Number</label>
+       <input type="tel" id="vehicle" value="" name="MobileNo" class="field text-field number-field" required>
+       <span class="message"></span>
+    </div>
+    <!--<div class="field-row">
+        <label class="form-label" for="payment">Payable Amount</label>
+       <input type="number" id="payment" class="field text-field payment-field" required>
+       <span class="message"></span>
+    </div>!-->
+    <div class="field-row">
+       <label class="form-label"></label>
+       <a href="index.html">
+       <button type="button" class="form-button" id="submit-btn" class="form-button" onclick="message()">Register</button>
+       </a>
+   </div>   
+ </form>
+ </form>
+ <script>
+    function message(){
+      alert("Challan Successful");
+    }
+ </script>
+ </body>
+ </html>

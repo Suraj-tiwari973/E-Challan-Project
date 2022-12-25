@@ -1,0 +1,134 @@
+.reg-form {
+    box-sizing: border-box;
+    box-shadow: 10px ,10px ,12px ,8px rgb(82, 131, 148);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 550px;
+    background-size:cover;
+    /*background-color:rgb(42, 42, 116);*/
+    background-color: lightskyblue;
+    height: 580px; 
+    margin:4% auto;
+    padding: 20px;
+    width:430px;
+  }
+  body{
+    background-image: url('../images/tricycle.jpeg');
+    background-position: center;
+    height:100px;
+    overflow: hidden;
+    background-size: cover;
+    
+  }
+h3{
+  color:black;
+}
+   
+  .form-heading {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 5px;
+  }
+   
+  .helper-text {
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+  .field-row {
+    position: relative;
+    width: 100%;
+  }
+   
+  .form-label {
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    margin: 0 5px 5px 0;
+    text-align: right;
+    width: 100px;
+  }
+   
+  .field {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 240px;
+  }
+  .field.field-short {
+    width: 70px;
+  }
+  .message {
+    display: inline-block;
+  }
+   
+  :required + .message::before {
+    content: "* ";
+  }
+  .text-field:focus:required:valid {
+    outline: green solid 2px;
+  }
+  .text-field:focus:required:invalid {
+    outline: orange solid 2px;
+  }
+  .date-field:focus:in-range {
+    outline: green solid 2px;
+  }
+  .date-field:focus:out-of-range {
+    outline: orange solid 2px;
+  }
+   
+  .website-field:focus:valid {
+    outline: green solid 2px;
+  }
+  .website-field:focus:invalid {
+    outline: orange solid 2px;
+  }
+  .form-button {
+    background:blue;
+    border: none;
+    border-radius: 0;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .first-name-field:focus:invalid + .message::after {
+    color: orange;
+    content: "Required your first name";
+  }
+   
+  .last-name-field:focus:invalid + .message::after {
+    color: orange;
+    content: "Required your last name";
+  }
+   
+  .dob-field:focus:out-of-range + .message::after {
+    color: orange;
+    content: "Date is out of range";
+  }
+   
+  .tel-field:focus:invalid + .message::after {
+    color: orange;
+    content: "Required vehicle number";
+  }
+   
+  .number-field:focus:invalid + .message::after {
+    color: orange;
+    content: "Required mobile number";
+  }
+  .payment-field:focus:invalid + .message::after {
+    color: orange;
+  }
+  .address-field:focus:invalid + .message::after {
+    color: orange;
+    content: "Required Name of Violator";
+  }
+   
+  .website-field:focus:invalid + .message::after {
+    color: orange;
+    content: "Required valid URL";
+  }
